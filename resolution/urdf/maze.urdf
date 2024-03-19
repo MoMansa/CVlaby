@@ -1,0 +1,10 @@
+<robot name="maze">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://resolution/src/maze.stl"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
+

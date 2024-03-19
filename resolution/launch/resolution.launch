@@ -1,0 +1,11 @@
+<launch>
+<include file="$(find plywood_mazes)/launch/maze_3_6x6.launch" />
+
+<include file="$(find plywood_mazes)/launch/spawn_turtlebot3.launch" />
+
+<node name="robot_control_node" pkg="resolution" type="robot_control.py" output="screen" />
+
+<node name="position_logger_node" pkg="resolution" type="position.py" output="screen" />
+
+<!-- node name="map_server" pkg="map_server" type="map_server" args="$(find plywood_mazes)/maps/maze_3.yaml" -->
+</launch>

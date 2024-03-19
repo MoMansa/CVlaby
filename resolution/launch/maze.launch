@@ -1,0 +1,12 @@
+<launch>  
+<!-- node name="maze_node" pkg="resolution" type="maze.py" output="screen"-->
+
+<!-- Charge le modèle URDF dans Gazebo -->
+<arg name="urdf_file" default="$(find resolution)/urdf/maze.urdf"/>
+<param name="robot_description" command="$(find xacro)/xacro --inorder $(arg urdf_file)" />
+ 
+    <!-- Lance le noeud gazebo_ros -->
+<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -model maze -param robot_description"/>
+
+</launch>

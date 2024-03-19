@@ -1,0 +1,4 @@
+<robot_description>
+  <source>package://resolution/urdf/maze.urdf</source>
+  <color>Red</color>
+</robot_description>

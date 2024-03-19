@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">    
+	<name>resolution</name>    
+	<version>0.0.0</version>    
+	<description>The resolution package</description>    
+	<maintainer email="masters@todo.todo">masters</maintainer>    
+	<license>TODO</license>    
+	<buildtool_depend>catkin</buildtool_depend>    
+	<build_depend>rospy</build_depend>    
+	<build_export_depend>rospy</build_export_depend>    
+	<exec_depend>rospy</exec_depend>    
+	<!-- Ajout de la dépendance à gazebo_ros -->    
+	<depend>gazebo_ros</depend>    
+	<export>    
+	</export>
+</package>
